@@ -4,9 +4,22 @@
   <title>Visual Product Matcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Simple spinner */
+    .spinner {
+      width: 56px; height: 56px;
+      border: 6px solid rgba(0,0,0,0.1);
+      border-top-color: #3b82f6; /* blue-500 */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .fade-in { animation: fade 0.2s ease-in; }
+    @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+  </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
-  <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-2xl">
+  <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-2xl relative">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">🔍 Visual Product Matcher</h1>
 
     <!-- Flash messages -->
@@ -22,7 +35,7 @@
       {% endif %}
     {% endwith %}
 
-    <form method="POST" action="/" enctype="multipart/form-data" class="space-y-6">
+    <form id="matchForm" method="POST" action="/" enctype="multipart/form-data" class="space-y-6">
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Choose Input Type:</label>
         <select name="source" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
@@ -33,21 +46,33 @@
 
       <div id="uploadDiv">
         <label class="block text-sm font-medium text-gray-700 mb-1">Upload Image:</label>
-        <input type="file" name="image" accept=".jpg,.jpeg,.png,.webp,image/*" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+        <input type="file" name="image" accept=".jpg,.jpeg,.png,.webp,image/*"
+               class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
       </div>
 
       <div id="urlDiv">
         <label class="block text-sm font-medium text-gray-700 mb-1">Or Paste Image URL:</label>
-        <input type="url" name="image_url" placeholder="https://example.com/image.jpg" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+        <input type="url" name="image_url" placeholder="https://example.com/image.jpg"
+               class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
       </div>
 
-      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition">
+      <button id="submitBtn" type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition">
         🚀 Find Similar Products
       </button>
     </form>
   </div>
 
+  <!-- Fullscreen loading overlay -->
+  <div id="loadingOverlay" class="hidden fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-50 fade-in">
+    <div class="flex flex-col items-center gap-4">
+      <div class="spinner"></div>
+      <p class="text-gray-700 font-medium">Finding similar products…</p>
+    </div>
+  </div>
+
   <script>
+    // Toggle URL vs upload field
     const sel = document.querySelector('select[name=source]');
     const uploadDiv = document.getElementById('uploadDiv');
     const urlDiv = document.getElementById('urlDiv');
@@ -56,6 +81,24 @@
       else { uploadDiv.style.display=''; urlDiv.style.display='none'; }
     }
     sel.addEventListener('change', toggle); toggle();
+
+    // Show loading overlay on submit
+    const form = document.getElementById('matchForm');
+    const overlay = document.getElementById('loadingOverlay');
+    const submitBtn = document.getElementById('submitBtn');
+    form.addEventListener('submit', function() {
+      // Basic client-side check so we avoid showing loader if nothing is provided
+      const source = sel.value;
+      const file = document.querySelector('input[name=image]').files[0];
+      const url = document.querySelector('input[name=image_url]').value.trim();
+
+      if ((source === 'upload' && !file) || (source === 'url' && !url)) {
+        return; // let server flash the error; don't show loader
+      }
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+      overlay.classList.remove('hidden');
+    });
   </script>
 </body>
 </html>
