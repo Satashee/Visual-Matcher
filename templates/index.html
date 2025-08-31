@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visual Product Matcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-2xl">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">🔍 Visual Product Matcher</h1>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="mb-4 space-y-2">
+          {% for category, msg in messages %}
+            <div class="p-3 rounded-lg {{ 'bg-red-100 text-red-800' if category == 'error' else 'bg-green-100 text-green-800' }}">
+              {{ msg }}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="/" enctype="multipart/form-data" class="space-y-6">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Choose Input Type:</label>
+        <select name="source" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+          <option value="upload" selected>Upload File</option>
+          <option value="url">Image URL</option>
+        </select>
+      </div>
+
+      <div id="uploadDiv">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Upload Image:</label>
+        <input type="file" name="image" accept=".jpg,.jpeg,.png,.webp,image/*" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div id="urlDiv">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Or Paste Image URL:</label>
+        <input type="url" name="image_url" placeholder="https://example.com/image.jpg" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition">
+        🚀 Find Similar Products
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const sel = document.querySelector('select[name=source]');
+    const uploadDiv = document.getElementById('uploadDiv');
+    const urlDiv = document.getElementById('urlDiv');
+    function toggle() {
+      if (sel.value === 'url') { uploadDiv.style.display='none'; urlDiv.style.display=''; }
+      else { uploadDiv.style.display=''; urlDiv.style.display='none'; }
+    }
+    sel.addEventListener('change', toggle); toggle();
+  </script>
+</body>
+</html>

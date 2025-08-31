@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "name": "Essence Mascara Lash Princess",
+    "category": "beauty",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+    "price": 9.99
+  },
+  {
+    "id": 2,
+    "name": "Eyeshadow Palette with Mirror",
+    "category": "beauty",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+    "price": 19.99
+  },
+  {
+    "id": 3,
+    "name": "Powder Canister",
+    "category": "beauty",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+    "price": 14.99
+  },
+  {
+    "id": 4,
+    "name": "Red Lipstick",
+    "category": "beauty",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+    "price": 12.99
+  },
+  {
+    "id": 5,
+    "name": "Red Nail Polish",
+    "category": "beauty",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+    "price": 8.99
+  },
+  {
+    "id": 6,
+    "name": "Calvin Klein CK One",
+    "category": "fragrances",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+    "price": 49.99
+  },
+  {
+    "id": 7,
+    "name": "Chanel Coco Noir Eau De",
+    "category": "fragrances",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+    "price": 129.99
+  },
+  {
+    "id": 8,
+    "name": "Dior J'adore",
+    "category": "fragrances",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+    "price": 89.99
+  },
+  {
+    "id": 9,
+    "name": "Dolce Shine Eau de",
+    "category": "fragrances",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+    "price": 69.99
+  },
+  {
+    "id": 10,
+    "name": "Gucci Bloom Eau de",
+    "category": "fragrances",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+    "price": 79.99
+  },
+  {
+    "id": 11,
+    "name": "Annibale Colombo Bed",
+    "category": "furniture",
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+    "price": 1899.99
+  },
+  {
+    "id": 12,
+    "name": "Annibale Colombo Sofa",
+    "category": "furniture",
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+    "price": 2499.99
+  },
+  {
+    "id": 13,
+    "name": "Bedside Table African Cherry",
+    "category": "furniture",
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+    "price": 299.99
+  },
+  {
+    "id": 14,
+    "name": "Knoll Saarinen Executive Conference Chair",
+    "category": "furniture",
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+    "price": 499.99
+  },
+  {
+    "id": 15,
+    "name": "Wooden Bathroom Sink With Mirror",
+    "category": "furniture",
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+    "price": 799.99
+  },
+  {
+    "id": 16,
+    "name": "Apple",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+    "price": 1.99
+  },
+  {
+    "id": 17,
+    "name": "Beef Steak",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+    "price": 12.99
+  },
+  {
+    "id": 18,
+    "name": "Cat Food",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+    "price": 8.99
+  },
+  {
+    "id": 19,
+    "name": "Chicken Meat",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+    "price": 9.99
+  },
+  {
+    "id": 20,
+    "name": "Cooking Oil",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+    "price": 4.99
+  },
+  {
+    "id": 21,
+    "name": "Cucumber",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+    "price": 1.49
+  },
+  {
+    "id": 22,
+    "name": "Dog Food",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+    "price": 10.99
+  },
+  {
+    "id": 23,
+    "name": "Eggs",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+    "price": 2.99
+  },
+  {
+    "id": 24,
+    "name": "Fish Steak",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+    "price": 14.99
+  },
+  {
+    "id": 25,
+    "name": "Green Bell Pepper",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+    "price": 1.29
+  },
+  {
+    "id": 26,
+    "name": "Green Chili Pepper",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+    "price": 0.99
+  },
+  {
+    "id": 27,
+    "name": "Honey Jar",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+    "price": 6.99
+  },
+  {
+    "id": 28,
+    "name": "Ice Cream",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+    "price": 5.49
+  },
+  {
+    "id": 29,
+    "name": "Juice",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+    "price": 3.99
+  },
+  {
+    "id": 30,
+    "name": "Kiwi",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+    "price": 2.49
+  },
+  {
+    "id": 31,
+    "name": "Lemon",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/lemon/thumbnail.webp",
+    "price": 0.79
+  },
+  {
+    "id": 32,
+    "name": "Milk",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp",
+    "price": 3.49
+  },
+  {
+    "id": 33,
+    "name": "Mulberry",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/mulberry/thumbnail.webp",
+    "price": 4.99
+  },
+  {
+    "id": 34,
+    "name": "Nescafe Coffee",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/thumbnail.webp",
+    "price": 7.99
+  },
+  {
+    "id": 35,
+    "name": "Potatoes",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/potatoes/thumbnail.webp",
+    "price": 2.29
+  },
+  {
+    "id": 36,
+    "name": "Protein Powder",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/thumbnail.webp",
+    "price": 19.99
+  },
+  {
+    "id": 37,
+    "name": "Red Onions",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/red-onions/thumbnail.webp",
+    "price": 1.99
+  },
+  {
+    "id": 38,
+    "name": "Rice",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/rice/thumbnail.webp",
+    "price": 5.99
+  },
+  {
+    "id": 39,
+    "name": "Soft Drinks",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/thumbnail.webp",
+    "price": 1.99
+  },
+  {
+    "id": 40,
+    "name": "Strawberry",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/strawberry/thumbnail.webp",
+    "price": 3.99
+  },
+  {
+    "id": 41,
+    "name": "Tissue Paper Box",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/thumbnail.webp",
+    "price": 2.49
+  },
+  {
+    "id": 42,
+    "name": "Water",
+    "category": "groceries",
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+    "price": 0.99
+  },
+  {
+    "id": 43,
+    "name": "Decoration Swing",
+    "category": "home-decoration",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+    "price": 59.99
+  },
+  {
+    "id": 44,
+    "name": "Family Tree Photo Frame",
+    "category": "home-decoration",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+    "price": 29.99
+  },
+  {
+    "id": 45,
+    "name": "House Showpiece Plant",
+    "category": "home-decoration",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+    "price": 39.99
+  },
+  {
+    "id": 46,
+    "name": "Plant Pot",
+    "category": "home-decoration",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+    "price": 14.99
+  },
+  {
+    "id": 47,
+    "name": "Table Lamp",
+    "category": "home-decoration",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+    "price": 49.99
+  },
+  {
+    "id": 48,
+    "name": "Bamboo Spatula",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp",
+    "price": 7.99
+  },
+  {
+    "id": 49,
+    "name": "Black Aluminium Cup",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp",
+    "price": 5.99
+  },
+  {
+    "id": 50,
+    "name": "Black Whisk",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp",
+    "price": 9.99
+  },
+  {
+    "id": 51,
+    "name": "Boxed Blender",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
+    "price": 39.99
+  },
+  {
+    "id": 52,
+    "name": "Carbon Steel Wok",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/thumbnail.webp",
+    "price": 29.99
+  },
+  {
+    "id": 53,
+    "name": "Chopping Board",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp",
+    "price": 12.99
+  },
+  {
+    "id": 54,
+    "name": "Citrus Squeezer Yellow",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+    "price": 8.99
+  },
+  {
+    "id": 55,
+    "name": "Egg Slicer",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+    "price": 6.99
+  },
+  {
+    "id": 56,
+    "name": "Electric Stove",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
+    "price": 49.99
+  },
+  {
+    "id": 57,
+    "name": "Fine Mesh Strainer",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp",
+    "price": 9.99
+  },
+  {
+    "id": 58,
+    "name": "Fork",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/thumbnail.webp",
+    "price": 3.99
+  },
+  {
+    "id": 59,
+    "name": "Glass",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/thumbnail.webp",
+    "price": 4.99
+  },
+  {
+    "id": 60,
+    "name": "Grater Black",
+    "category": "kitchen-accessories",
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/thumbnail.webp",
+    "price": 10.99
+  }
+]
